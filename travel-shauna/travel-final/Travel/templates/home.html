@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<style>
+<!-- <style>
 	h1 {
  	font-family: "segoe script itali";
  	text-align: center;
@@ -24,7 +24,7 @@
 	font-weight: 900;
 	font-size: 20px;
 }
-</style>
+</style> -->
 
 	<h1>Need Holiday Inspiration?</h1>
 	<h2>Fill out our online questionnaire and arrive at a decision in minutes...</h2>
@@ -44,7 +44,13 @@
 	 			<input type="checkbox" name="feature5" value="Culture">5. I'd take a museum over a sun tan anyday<br>
 	 			<br>
 	 	</div>
-			<a href="/inspiration">Submit</a>
-	 </form>
+
+		 </form>
+			<!-- <a href="/inspiration">Submit</a> -->
+			<form action="/inspiration">
+    		<input type="submit" value="Submit" />
+			</form>
+			<!-- <button href="http://google.com">Link To Submit</button> -->
+
 </div>
 {% endblock %}
